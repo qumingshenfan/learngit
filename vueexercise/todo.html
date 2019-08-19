@@ -14,7 +14,12 @@
         </div>
         <div class="main">
             <h3 class="big-title">添加任务：</h3>
-            <input placeholder="例如:吃饭睡觉打豆豆；     提示：+回车即可添加任务" class="task-input" type="text">
+            <input 
+            placeholder="例如:吃饭睡觉打豆豆；     提示：+回车即可添加任务" 
+            class="task-input" 
+            type="text"
+            v-on:keyup="addTodo"
+            />
             <ul class="task-count">
                 <li>1个任务未完成</li>
                 <li class="action">
@@ -27,24 +32,17 @@
             <div class="tasks">
                 <span class="no-task-tip">还没有添加任何任务</span>
                 <ul class="todo-list">
-                    <li class="todo completed">
+                    <li class="todo " v-for="item in list">
                         <div class="view">
-                            <input checked class="toggle" type="checkbox">
-                            <label>吃饭睡觉打豆豆</label>
+                            <input class="toggle" type="checkbox">
+                            <label>{{item.title}}</label>
                             <button class="destroy"></button>
                         </div>
                         <input class="edit" type="text">
                     </li>
-                    <li class="todo">
-                            <div class="view">
-                                <input checked class="toggle" type="checkbox">
-                                <label>吃饭睡觉打豆豆</label>
-                                <button class="destroy"></button>
-                            </div>
-                            <input class="edit" type="text">
-                        </li>
                 </ul>
             </div>
         </div>
+        <script src="./app.js"></script>
     </body>
 </html>
