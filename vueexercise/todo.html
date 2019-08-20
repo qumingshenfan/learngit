@@ -18,9 +18,10 @@
             placeholder="例如:吃饭睡觉打豆豆；     提示：+回车即可添加任务" 
             class="task-input" 
             type="text"
-            v-on:keyup="addTodo"
+            v-model ="todo"
+            v-on:keyup.enter="addTodo"
             />
-            <ul class="task-count">
+            <ul class="task-count" v-show="list.length">  
                 <li>1个任务未完成</li>
                 <li class="action">
                     <a class="active" href="#">所有任务</a>
@@ -30,15 +31,15 @@
             </ul>
             <h3 class="big-title">任务列表：</h3>
             <div class="tasks">
-                <span class="no-task-tip">还没有添加任何任务</span>
+                <span class="no-task-tip" v-show="!list.length">还没有添加任何任务</span>
                 <ul class="todo-list">
-                    <li class="todo " v-for="item in list">
+                    <li class="todo"   :class="{completed:item.isChecked, editing: item === edtorTodos}"  v-for="item in list">
                         <div class="view">
-                            <input class="toggle" type="checkbox">
-                            <label>{{item.title}}</label>
-                            <button class="destroy"></button>
+                            <input class="toggle" type="checkbox"  v-model="item.isChecked">
+                            <label @dblclick="edtorTodo(item)">{{item.title}}</label>
+                            <button class="destroy"  @click="deleteTodo(item)"></button>
                         </div>
-                        <input class="edit" type="text">
+                        <input class="edit" type="text"  v-model="item.title"  >
                     </li>
                 </ul>
             </div>
