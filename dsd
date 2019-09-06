@@ -1,0 +1,61 @@
+[33mcommit 9b37a6055fa5aa423a793cdd5d166597d8853fe0[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Merge: b036611 e2048a3
+Author: lingling <lingling@tinoq.com>
+Date:   Tue Aug 6 15:22:15 2019 +0800
+
+    merge with no-ff
+
+[33mcommit e2048a3a96ad623f6cba16efc7e67cc955bd416b[m[33m ([m[1;32mdev[m[33m)[m
+Author: lingling <lingling@tinoq.com>
+Date:   Tue Aug 6 15:21:31 2019 +0800
+
+    add merge
+
+[33mcommit b0366112e7494c5c2e229a037bc91b197957d2a3[m
+Author: lingling <lingling@tinoq.com>
+Date:   Tue Aug 6 15:15:23 2019 +0800
+
+    fixed
+
+[33mcommit a424e743f9d817d1bb432fc0a073aa4d3b5d3d91[m
+Merge: e3a170f 3a3a677
+Author: lingling <lingling@tinoq.com>
+Date:   Tue Aug 6 15:13:53 2019 +0800
+
+    conflict fixed
+
+[33mcommit e3a170f50ee86d1e97960ada72fd1417af5aab4c[m
+Author: lingling <lingling@tinoq.com>
+Date:   Tue Aug 6 15:07:37 2019 +0800
+
+    &simple
+
+[33mcommit 3a3a6775f1a30fbd605c9be6c2ebdb6c3a4b42d8[m[33m ([m[1;32mfeature1[m[33m)[m
+Author: lingling <lingling@tinoq.com>
+Date:   Tue Aug 6 15:01:51 2019 +0800
+
+    AND simple
+
+[33mcommit 60eee0e9978a2cf6ed1bd7d86ad7d05a0a27cbae[m
+Author: lingling <lingling@tinoq.com>
+Date:   Tue Aug 6 14:57:41 2019 +0800
+
+    branch test
+
+[33mcommit af54558aa18261da7bc68c718bfa70906f1e7519[m
+Author: lingling <lingling@tinoq.com>
+Date:   Tue Aug 6 14:56:38 2019 +0800
+
+    remove branch
+
+[33mcommit 09bb25cb911851f5758655e1c98291662eefa1db[m
+Author: lingling <lingling@tinoq.com>
+Date:   Tue Aug 6 14:54:32 2019 +0800
+
+    branch test
+
+[33mcommit 134457627406a6401071ecfbbf6ffade5ba901b5[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: lingling <lingling@tinoq.com>
+Date:   Tue Aug 6 14:29:27 2019 +0800
+
+    wrote a readme file

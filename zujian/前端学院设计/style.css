@@ -1,0 +1,87 @@
+body,h1,h2,h3,h4,h5,p,dl,dd,ul,ol,form,input,textarea,th,td,select { margin:0; padding:0; }
+em { font-style:normal; }
+li { list-style:none; }
+a { text-decoration:none; }
+img { border:none; vertical-align:top; }
+table { border-collapse:collapse; }
+input,textarea { outline:none; }
+textarea { resize:none; overflow:auto; }
+
+
+#helloWorld,#introduction,#data,#main,#footer{
+    margin: 0 auto;
+}
+
+
+#helloWorld{
+    width:1600px;
+    height:990px;
+    background:url(img/helloworldbg.jpg) no-repeat;
+}
+#helloWorld .title{
+    display: inline-block;
+    padding-top:206px;
+    padding-left: 638px;
+    font-size: 62px;
+    height: 52px;
+    line-height: 52px;
+    font-family:"Montserrat";
+    color: #ffffff;
+    font-weight: lighter;
+}
+#helloWorld .china{
+    width:774px;
+    height: 88px;
+    padding-top: 81px;
+    padding-left: 416px;
+}
+
+#helloWorld .china .china-content{
+    font-size: 20px;
+    height: 21px;
+    line-height: 21px;
+    font-family:"Montserrat";
+    color: #ffffff;
+    font-weight: 100;
+    text-align: center;
+}
+#introduction{
+    width:1600px;
+    height:710px;
+    background: #ffffff;
+}
+#data{
+    width:1600px;
+    height: 800px;
+    background: url(img/databg.jpg) no-repeat;
+}
+#main{
+    width:1600px;
+    height: 3365px;
+}
+
+#main .content1{
+    width: 1600px;
+    height: 579px;
+    border-bottom: 1px solid #efefef;
+}
+#main .content2{
+    width: 1600px;
+    height: 999px;
+    border-bottom: 1px solid #efefef;
+}
+#main .content3{
+    width: 1600px;
+    height: 1083px;
+    border-bottom: 1px solid #efefef;
+}
+#main .content4{
+    height: 700px;
+    border-bottom: 1px solid #efefef;
+}
+#footer{
+    width:1600px;
+    height:410px ;
+    background: black;
+}
+

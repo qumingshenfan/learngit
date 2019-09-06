@@ -20,15 +20,36 @@ var store = {
     }
 ];*/
 
+
+//取出所有的值
 var list = store.fetch("exercise")
 
-new Vue({
+
+//过滤的时候有三种情况 all finished unfinished
+var filter = {
+    all:function(){
+        return list;
+    },
+    finished:function(){
+        return list.filter(function(item){
+            return item.isChecked;
+        })
+    },
+    unfinished:function(){
+        return list.filter(function(item){
+            return !item.isChecked;
+        })
+    }
+}
+
+var vm = new Vue({
     el:".main",
     data:{
         list:list,
         todo:"",
         edtorTodos:'', //记录正在编辑的数据
-        beforeTitle:''//记录正在编辑的数据的title
+        beforeTitle:'',//记录正在编辑的数据的title
+        visibility:"all" //通过这个属性值的变化对数据进行筛选
     },
     watch: {
        /* list:function(){  //监控list属性，当属性对应的值发生变化就会执行函数
@@ -46,6 +67,10 @@ new Vue({
             return this.list.filter(function(item){
                 return !item.isChecked
             }).length
+        },
+        filteredList:function(){
+            //找到了过滤函数，就返回过滤后的数据，如果没有就返回所有数据
+            return filter[this.visibility] ? filter[this.visibility](list):list;
         }
     },
     methods: {
@@ -89,4 +114,13 @@ new Vue({
             }
         }
     }
-})
+});
+function watchHashChange(){
+    var hash = window.location.hash.slice(1);
+    vm.visibility = hash;
+}
+
+watchHashChange();
+
+
+window.addEventListener("hashchange",watchHashChange);
